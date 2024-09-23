@@ -26,6 +26,34 @@
     display: block;
     }
 }
+.table {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+
+th {
+    text-align: left;
+    font-weight: 800;
+
+   
+}
+
+tr {
+font-weight: 600;
+
+    &:hover{
+    color: gray;
+    }
+}
+
+
+
+
 
 
 

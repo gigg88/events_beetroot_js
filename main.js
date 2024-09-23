@@ -1,9 +1,5 @@
 //1.Create an html-page for displaying and editing text. When opening the page, the text should be
 
-
-
-
-
 document.addEventListener("keydown", (event) => {
     console.log(event.ctrlKey);
      // Don’t forget to turn off default settings for these hotkey combinations.
