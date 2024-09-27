@@ -10,7 +10,22 @@ const countries = [
   ];
 
 
+  function sortByPropertyDescending(array, property) {
+    return array.sort((a, b) => {
+      const valueA = a[property] ? 1 : 0;
+      const valueB = b[property] ? 1 : 0;
+      return valueA - valueB; // Descending order
+    });
+  }
+  
+  const sortedCountries = sortByPropertyDescending(countries, "id");
+  console.log(sortedCountries);
+
+
   function createTable() {
+
+    
+
     const tableBody = document.querySelector('tbody');
     countries.forEach(country => {
       const row = document.createElement('tr');
@@ -27,7 +42,11 @@ const countries = [
       row.appendChild(capitalCell);
   
       tableBody.appendChild(row);
+
+      
     });
   }
   
   createTable();
+
+ 

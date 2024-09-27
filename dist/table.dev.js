@@ -16,6 +16,17 @@ var countries = [{
   capital: "Stockholm"
 }];
 
+function sortByPropertyDescending(array, property) {
+  return array.sort(function (a, b) {
+    var valueA = a[property] ? 1 : 0;
+    var valueB = b[property] ? 1 : 0;
+    return valueA - valueB; // Descending order
+  });
+}
+
+var sortedCountries = sortByPropertyDescending(countries, "id");
+console.log(sortedCountries);
+
 function createTable() {
   var tableBody = document.querySelector('tbody');
   countries.forEach(function (country) {
